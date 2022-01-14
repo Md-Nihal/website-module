@@ -6,13 +6,15 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container-1{
     background-color: #FFFFFF;
     width: 870px;
-    
+    border-radius: 5px;
     padding: 30px;
+    margin-top: 21px;
 }
 /* top players st6yle */
 .top-players{
@@ -72,3 +74,34 @@ font-size: 20px;
     text-decoration: none;
     color: #562EFF;
 }
+/* Latest couses style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #aeaeaead;
+}
+.course-duration{
+    background-color: #ff4a5f83;
+    border-radius: 20%;
+    font-weight: 600;
+font-size: 14.6913px;
+}
+
